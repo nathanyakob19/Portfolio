@@ -40,7 +40,7 @@ function App() {
      <div className="glitch-container">
   <GlitchText text="NATHAN" enableOnHover={false} />
   <img src="/port1.jpg" alt="Nathan" className="profile-pic" />
-  <GlitchText text="WAGHCHOURE" enableOnHover={false} />
+  <GlitchText text="YAKOB" enableOnHover={false} />
 </div>
     </header>
       <main>
@@ -64,7 +64,7 @@ function App() {
     About Me
   </h3>
 </div> <p className="about-text">
-            Hi, I’m Nathan Waghchoure — a passionate and detail-oriented BSc IT student with a strong interest in full-stack
+            Hi, I’m Nathan Yakob Waghchoure — a passionate and detail-oriented BSc IT student with a strong interest in full-stack
             development, AI integration, and cybersecurity. I specialize in building responsive web applications using
             modern technologies like React, Flask, MySQL, and Python. Alongside development, I’ve completed a cybersecurity
             internship where I gained practical knowledge in threat analysis, ethical hacking, and digital forensics. With
