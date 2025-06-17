@@ -2,9 +2,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
+  width: 100vw;          /* Full viewport width */
+  height: 100vh;         /* Full viewport height */
+  z-index: -1;           /* Behind all content */
   background: transparent;
-  pointer-events: none; /* Optional if you don't want interaction */
+  pointer-events: none;  /* Prevents user interaction like clicks */
+  touch-action: none;    /* Prevents touch scrolling issues on mobile */
 }

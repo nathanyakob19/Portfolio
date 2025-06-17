@@ -23,7 +23,12 @@ const techBadges = [
 ];
 function App() {
   return (
-    <div style={{ color: "white", padding: "20px", fontFamily: "Arial, sans-serif" }}>
+    <div style={{ 
+  maxWidth: "1200px",
+  margin: "0 auto",
+  padding: "16px",
+  width: "100%",
+  boxSizing: "border-box",color: "white", padding: "20px", fontFamily: "Arial, sans-serif" }}>
            <Squares
         direction="right"
         speed={0.8}
