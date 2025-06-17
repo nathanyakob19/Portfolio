@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import "./ProjectCarousel.css"; // CSS below
+import React, { useEffect, useRef } from 'react';
+import "./ProjectCarousel.css";
+
 const videos = [
   {
     url: "https://www.youtube.com/embed/7YIT357ewy0",
@@ -11,22 +12,21 @@ const videos = [
   },
   {
     url: "https://www.youtube.com/embed/vKGfhtifGCQ",
-    title: " TO-DO List App"
+    title: "TO-DO List App"
   }
 ];
 
-
 const ProjectCarousel = () => {
-const containerRef = useRef(null);
-  let index = 0;
+  const containerRef = useRef(null);
+  const index = useRef(0); // 👈 keep using ref
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (!containerRef.current) return;
 
-      index = (index + 1) % videos.length;
+      index.current = (index.current + 1) % videos.length;
       containerRef.current.scrollTo({
-        left: index * 320,
+        left: index.current * 320, // use .current here
         behavior: 'smooth'
       });
     }, 3500);
